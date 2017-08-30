@@ -12,6 +12,17 @@ var summerHtmlImageMapCreator = (function() {
     /* Utilities */
     var utils = {
         /**
+         * Returns Millimeter Value of a Pixel Value 
+         *
+         * @param px {Float} - pixel value
+         * @returns {String} - millimeter value
+         */
+        getMillimeterUnits: function(px, dpi){
+            var mm = (px*25.4)/dpi;
+
+            return mm.toFixed(2);
+        },
+        /**
          * Returns offset from html page top-left corner for some element
          *
          * @param node {HTMLElement} - html element
