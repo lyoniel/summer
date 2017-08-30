@@ -14,11 +14,6 @@ function SummerHtmlImageMapCreator() {
 	
 	/* Utilities */
 	var utils = {
-		getMillimeterUnits: function(px, dpi){
-		    var mm = (px*25.4)/dpi;
-
-		    return mm.toFixed(2);
-		},
 		offsetX : function(node) {
 			var box = node.getBoundingClientRect(),
 				scroll = window.pageXOffset;
